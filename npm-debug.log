@@ -1,0 +1,336 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ioredis' ]
+2 info using npm@1.1.66
+3 info using node@v0.8.15
+4 verbose read json /home/dinhtrong/thanh/laravel5.1/package.json
+5 verbose read json /home/dinhtrong/thanh/laravel5.1/package.json
+6 verbose cache add [ 'ioredis', null ]
+7 silly cache add name=undefined spec="ioredis" args=["ioredis",null]
+8 verbose parsed url { pathname: 'ioredis', path: 'ioredis', href: 'ioredis' }
+9 silly lockFile ef2a209b-ioredis ioredis
+10 verbose lock ioredis /home/dinhtrong/.npm/ef2a209b-ioredis.lock
+11 silly lockFile ef2a209b-ioredis ioredis
+12 verbose addNamed [ 'ioredis', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile a63a7adb-ioredis ioredis@
+15 verbose lock ioredis@ /home/dinhtrong/.npm/a63a7adb-ioredis.lock
+16 silly addNameRange { name: 'ioredis', range: '', hasData: false }
+17 verbose url raw ioredis
+18 verbose url resolving [ 'https://registry.npmjs.org/', './ioredis' ]
+19 verbose url resolved https://registry.npmjs.org/ioredis
+20 info trying registry request attempt 1 at 13:41:07
+21 verbose etag "3P236A6CKTDLFUTMIA0B32IPB"
+22 http GET https://registry.npmjs.org/ioredis
+23 http 304 https://registry.npmjs.org/ioredis
+24 silly registry.get cb [ 304,
+24 silly registry.get   { date: 'Fri, 12 Jun 2015 06:41:08 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     etag: '"3P236A6CKTDLFUTMIA0B32IPB"',
+24 silly registry.get     age: '0',
+24 silly registry.get     connection: 'keep-alive',
+24 silly registry.get     'x-served-by': 'cache-lax1424-LAX',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '1',
+24 silly registry.get     'x-timer': 'S1434091268.902494,VS0,VE81',
+24 silly registry.get     vary: 'Accept' } ]
+25 verbose etag ioredis from cache
+26 silly addNameRange number 2 { name: 'ioredis', range: '', hasData: true }
+27 silly addNameRange versions [ 'ioredis',
+27 silly addNameRange   [ '1.0.0',
+27 silly addNameRange     '0.0.1',
+27 silly addNameRange     '0.0.2',
+27 silly addNameRange     '0.0.3',
+27 silly addNameRange     '0.0.4',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.5.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.0.2',
+27 silly addNameRange     '1.0.3',
+27 silly addNameRange     '1.0.4',
+27 silly addNameRange     '1.0.5',
+27 silly addNameRange     '1.0.6',
+27 silly addNameRange     '1.0.7',
+27 silly addNameRange     '1.0.8',
+27 silly addNameRange     '1.0.9',
+27 silly addNameRange     '1.0.10',
+27 silly addNameRange     '1.0.11',
+27 silly addNameRange     '1.0.12',
+27 silly addNameRange     '1.0.13',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.1.2',
+27 silly addNameRange     '1.1.3',
+27 silly addNameRange     '1.1.4',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.2.1',
+27 silly addNameRange     '1.2.2',
+27 silly addNameRange     '1.2.3',
+27 silly addNameRange     '1.2.4',
+27 silly addNameRange     '1.2.5',
+27 silly addNameRange     '1.2.6',
+27 silly addNameRange     '1.2.7',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.3.1',
+27 silly addNameRange     '1.3.2',
+27 silly addNameRange     '1.3.3',
+27 silly addNameRange     '1.3.4',
+27 silly addNameRange     '1.3.5',
+27 silly addNameRange     '1.3.6',
+27 silly addNameRange     '1.4.0' ] ]
+28 verbose addNamed [ 'ioredis', '1.4.0' ]
+29 verbose addNamed [ '1.4.0', '1.4.0' ]
+30 silly lockFile eec6362d-ioredis-1-4-0 ioredis@1.4.0
+31 verbose lock ioredis@1.4.0 /home/dinhtrong/.npm/eec6362d-ioredis-1-4-0.lock
+32 verbose read json /home/dinhtrong/.npm/ioredis/1.4.0/package/package.json
+33 silly lockFile eec6362d-ioredis-1-4-0 ioredis@1.4.0
+34 silly lockFile a63a7adb-ioredis ioredis@
+35 silly resolved [ { name: 'ioredis',
+35 silly resolved     version: '1.4.0',
+35 silly resolved     description: 'A delightful, performance-focused Redis client for Node and io.js',
+35 silly resolved     main: 'index.js',
+35 silly resolved     scripts:
+35 silly resolved      { test: 'NODE_ENV=test DEBUG=ioredis:* mocha',
+35 silly resolved        'test:cov': 'NODE_ENV=test DEBUG=ioredis:* node ./node_modules/istanbul/lib/cli.js cover --preserve-comments ./node_modules/mocha/bin/_mocha -- -R spec',
+35 silly resolved        'generate-docs': 'jsdoc2md lib/redis.js lib/cluster.js lib/commander.js > API.md',
+35 silly resolved        build: 'node tools/build > commands.js',
+35 silly resolved        bench: 'matcha benchmarks/*.js' },
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/luin/ioredis.git' },
+35 silly resolved     keywords: [ 'redis', 'cluster', 'sentinel', 'pipelining' ],
+35 silly resolved     author: { name: 'luin', email: 'i@zihua.li', url: 'http://zihua.li' },
+35 silly resolved     license: 'MIT',
+35 silly resolved     dependencies:
+35 silly resolved      { bluebird: '^2.9.21',
+35 silly resolved        debug: '^2.1.3',
+35 silly resolved        flexbuffer: '0.0.6',
+35 silly resolved        lodash: '^3.6.0' },
+35 silly resolved     devDependencies:
+35 silly resolved      { chai: '^2.2.0',
+35 silly resolved        'codeclimate-test-reporter': '0.0.4',
+35 silly resolved        istanbul: '^0.3.13',
+35 silly resolved        jsdoc: '^3.3.0-beta3',
+35 silly resolved        'jsdoc-to-markdown': '^1.0.3',
+35 silly resolved        matcha: '^0.6.0',
+35 silly resolved        mocha: '^2.2.1',
+35 silly resolved        'server-destroy': '^1.0.0',
+35 silly resolved        sinon: '^1.14.1' },
+35 silly resolved     engines: { node: '>= 0.10.16', iojs: '>= 1.0.0' },
+35 silly resolved     readme: '# ioredis\n\n[![Build Status](https://travis-ci.org/luin/ioredis.svg?branch=master)](https://travis-ci.org/luin/ioredis)\n[![Test Coverage](https://codeclimate.com/github/luin/ioredis/badges/coverage.svg)](https://codeclimate.com/github/luin/ioredis)\n[![Code Climate](https://codeclimate.com/github/luin/ioredis/badges/gpa.svg)](https://codeclimate.com/github/luin/ioredis)\n[![Dependency Status](https://david-dm.org/luin/ioredis.svg)](https://david-dm.org/luin/ioredis)\n[![Join the chat at https://gitter.im/luin/ioredis](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/luin/ioredis?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nA delightful, performance-focused Redis client for Node and io.js\n\nSupport Redis >= 2.6.12 and (Node.js >= 0.10.16 or io.js).\n\n# Feature\nioredis is a robust, full-featured Redis client\nused in the world\'s biggest online commerce company [Alibaba](http://www.alibaba.com/).\n\n0. Full-featured. It supports [Cluster](http://redis.io/topics/cluster-tutorial), [Sentinel](redis.io/topics/sentinel), [Pipelining](http://redis.io/topics/pipelining) and of course [Lua scripting](http://redis.io/commands/eval) & [Pub/Sub](http://redis.io/topics/pubsub)(with the support of binary messages).\n0. High performance.\n0. Delightful API. Supports both Node-style callbacks and [promises](https://github.com/petkaantonov/bluebird).\n0. Supports command arguments and replies transform.\n0. Abstraction for Lua scripting, allowing you to define custom commands.\n0. Support for binary data.\n0. Support for both TCP/IP and UNIX domain sockets.\n0. Supports offline queue and ready checking.\n0. Supports ES6 types such as `Map` and `Set`.\n0. Sophisticated error handling strategy.\n\n<hr>\n\n# Links\n* [API Documentation](API.md)\n* [Changelog](Changelog.md)\n* [Migrating from node_redis](https://github.com/luin/ioredis/wiki/Migrating-from-node_redis)\n* [Error Handling](#error-handling)\n* [Benchmark](#benchmark)\n\n# Quick Start\n\n## Install\n```shell\n$ npm install ioredis\n```\n\n## Basic Usage\n\n```javascript\nvar Redis = require(\'ioredis\');\nvar redis = new Redis();\n\nredis.set(\'foo\', \'bar\');\nredis.get(\'foo\', function (err, result) {\n  console.log(result);\n});\n\n// or using promise if the last argument isn\'t a function\nredis.get(\'foo\').then(function (result) {\n  console.log(result);\n});\n\n// Arguments to commands are flatten, so the following are same:\nredis.sadd(\'set\', 1, 3, 5, 7);\nredis.sadd(\'set\', [1, 3, 5, 7]);\n```\n\n## Connect to Redis\nWhen a new `Redis` instance is created,\na connection to Redis will be created at the same time.\nYou can specify which Redis to connect to by:\n\n```javascript\nnew Redis()       // Connect to 127.0.0.1:6379\nnew Redis(6380)   // 127.0.0.1:6380\nnew Redis(6379, \'192.168.1.1\')        // 192.168.1.1:6379\nnew Redis(\'redis://:authpassword@127.0.0.1:6380/4\')   // 127.0.0.1:6380, db 4\nnew Redis(\'/tmp/redis.sock\')\nnew Redis({\n  port: 6379,          // Redis port\n  host: \'127.0.0.1\',   // Redis host\n  family: 4,           // 4(IPv4) or 6(IPv6)\n  password: \'auth\'\n  db: 0\n})\n```\n\nSee [API Documentation](API.md#new_Redis) for all available options.\n\n## Pub/Sub\n\nHere is a simple example of the API for publish / subscribe.\nThe following program opens two client connections.\nIt subscribes to a channel with one connection,\nand publishes to that channel with the other:\n\n```javascript\nvar Redis = require(\'ioredis\');\nvar redis = new Redis();\nvar pub = new Redis();\nredis.subscribe(\'news\', \'music\', function (err, count) {\n  // Now both channel \'news\' and \'music\' are subscribed successfully.\n  // `count` represents the number of channels we are currently subscribed to.\n\n  pub.publish(\'news\', \'Hello world!\');\n  pub.publish(\'music\', \'Hello again!\');\n});\n\nredis.on(\'message\', function (channel, message) {\n  // Receive message Hello world! from channel news\n  // Receive message Hello again! from channel music\n  console.log(\'Receive message %s from channel %s\', message, channel);\n});\n\n// There\'s also a event called \'messageBuffer\', which is same to \'message\' except\n// it returns buffers instead of strings.\nredis.on(\'messageBuffer\', function (channel, message) {\n  // Both `channel` and `message` are buffers.\n});\n```\n\n`PSUBSCRIBE` is also supported in a similar way:\n\n```javascript\nredis.psubscribe(\'pat?ern\', function (err, count) {});\nredis.on(\'pmessage\', function (pattern, channel, message) {});\nredis.on(\'pmessageBuffer\', function (pattern, channel, message) {});\n```\n\nWhen a client issues a SUBSCRIBE or PSUBSCRIBE, that connection is put into a "subscriber" mode.\nAt that point, only commands that modify the subscription set are valid.\nWhen the subscription set is empty, the connection is put back into regular mode.\n\nIf you need to send regular commands to Redis while in subscriber mode, just open another connection.\n\n## Handle Binary Data\nArguments can be buffers:\n```javascript\nredis.set(\'foo\', new Buffer(\'bar\'));\n```\n\nAnd every command has a method that returns a Buffer (by adding a suffix of "Buffer" to the command name).\nTo get a buffer instead of a utf8 string:\n\n```javascript\nredis.getBuffer(\'foo\', function (err, result) {\n  // result is a buffer.\n});\n```\n\n## Pipelining\nIf you want to send a batch of commands(e.g. > 5), you can use pipelining to queue\nthe commands in the memory, then send them to Redis all at once. This way the performance improves by 50%~300%(See [benchmark section](#benchmark)).\n\n`redis.pipeline()` creates a `Pipeline` instance. You can call any Redis\ncommands on it just like the `Redis` instance. The commands are queued in the memory\nand flushed to Redis by calling `exec` method:\n\n```javascript\nvar pipeline = redis.pipeline();\npipeline.set(\'foo\', \'bar\');\npipeline.del(\'cc\');\npipeline.exec(function (err, results) {\n  // `err` is always null, and `results` is an array of responses\n  // corresponding the sequence the commands where queued.\n  // Each response follows the format `[err, result]`.\n});\n\n// You can even chain the commands:\nredis.pipeline().set(\'foo\', \'bar\').del(\'cc\').exec(function (err, results) {\n});\n\n// `exec` also returns a Promise:\nvar promise = redis.pipeline().set(\'foo\', \'bar\').get(\'foo\').exec();\npromise.then(function (result) {\n  // result === [[null, \'OK\'], [null, \'bar\']]\n});\n```\n\nEach chained command can also have a callback, which will be invoked when the command\nget a reply:\n\n```javascript\nredis.pipeline().set(\'foo\', \'bar\').get(\'foo\', function (err, result) {\n  // result === \'bar\'\n}).exec(function (err, result) {\n  // result[1][1] === \'bar\'\n});\n```\n\nIn addition to adding commands to the `pipeline` queue individually, you can also pass an array of commands and arguments to the constructor:\n\n```javascript\nredis.pipeline([\n  [\'set\', \'foo\', \'bar\'],\n  [\'get\', \'foo\']\n]).exec(function () { /* ... */ });\n```\n\n\n## Transaction\nMost of the time the transaction commands `multi` & `exec` are used together with pipeline.\nTherefore by default when `multi` is called, a `Pipeline` instance is created automatically,\nso that you can use `multi` just like `pipeline`:\n\n```javascript\nredis.multi().set(\'foo\', \'bar\').get(\'foo\').exec(function (err, results) {\n  // results === [[null, \'OK\'], [null, \'bar\']]\n});\n```\nIf there\'s a syntax error in the transaction\'s command chain (e.g. wrong number of arguments, wrong command name, etc),\nthen none of the commands would be executed, and an error is returned:\n\n```javascript\nredis.multi().set(\'foo\').set(\'foo\', \'new value\').exec(function (err, results) {\n  // err:\n  //  { [ReplyError: EXECABORT Transaction discarded because of previous errors.]\n  //    name: \'ReplyError\',\n  //    message: \'EXECABORT Transaction discarded because of previous errors.\',\n  //    command: { name: \'exec\', args: [] },\n  //    previousErrors:\n  //     [ { [ReplyError: ERR wrong number of arguments for \'set\' command]\n  //         name: \'ReplyError\',\n  //         message: \'ERR wrong number of arguments for \\\'set\\\' command\',\n  //         command: [Object] } ] }\n});\n```\n\nIn terms of the interface, `multi` differs from `pipeline` in that when specifying a callback\nto each chained command, the queueing state is passed to the callback instead of the result of the command:\n\n```javascript\nredis.multi().set(\'foo\', \'bar\', function (err, result) {\n  // result === \'QUEUED\'\n}).exec(/* ... */);\n```\n\nIf you want to use transaction without pipeline, pass { pipeline: false } to `multi`,\nand every command would be sent to Redis immediately without waiting for an `exec` invokation:\n\n```javascript\nredis.multi({ pipeline: false });\nredis.set(\'foo\', \'bar\');\nredis.get(\'foo\');\nredis.exec(function (err, result) {\n  // result === [[null, \'OK\'], [null, \'bar\']]\n});\n```\n\nThe constructor of `multi` also accepts a batch of commands:\n\n```javascript\nredis.multi([\n  [\'set\', \'foo\', \'bar\'],\n  [\'get\', \'foo\']\n]).exec(function () { /* ... */ });\n```\n\nInline transaction is supported by pipeline, that means you can group a subset commands\nin the pipeline into a transaction:\n\n```javascript\nredis.pipeline().get(\'foo\').multi().set(\'foo\', \'bar\').get(\'foo\').exec().get(\'foo\').exec();\n```\n\n## Arguments & Replies Transform\nMost Redis commands take one or more Strings as arguments,\nand replies are sent back as a single String or an Array of Strings. However sometimes\nyou may want something different: For instance it would be more convenient if HGETALL\ncommand returns a hash (e.g. `{key: val1, key2: v2}`) rather than an array of key values (e.g. `[key1,val1,key2,val2]`).\n\nioredis has a flexible system for transforming arguments and replies. There are two types\nof transformers, argument transform and reply transformer:\n\n```javascript\nvar Redis = require(\'ioredis\');\n\n// define a argument transformer that convert\n// hmset(\'key\', { k1: \'v1\', k2: \'v2\' })\n// or\n// hmset(\'key\', new Map([[\'k1\', \'v1\'], [\'k2\', \'v2\']]))\n// into\n// hmset(\'key\', \'k1\', \'v1\', \'k2\', \'v2\')\nRedis.Command.setArgumentTransformer(\'hmset\', function (args) {\n  if (args.length === 2) {\n    if (typeof Map !== \'undefined\' && args[1] instanceof Map) {\n      return [args[0]].concat(utils.convertMapToArray(args[1]));\n    }\n    if ( typeof args[1] === \'object\' && args[1] !== null) {\n      return [args[0]].concat(utils.convertObjectToArray(args[1]));\n    }\n  }\n  return args;\n});\n\n// define a reply transformer that convert the reply\n// [\'k1\', \'v1\', \'k2\', \'v2\']\n// into\n// { k1: \'v1\', \'k2\': \'v2\' }\nRedis.Command.setReplyTransformer(\'hgetall\', function (result) {\n  if (Array.isArray(result)) {\n    var obj = {};\n    for (var i = 0; i < result.length; i += 2) {\n      obj[result[i]] = result[i + 1];\n    }\n    return obj;\n  }\n  return result;\n});\n```\n\nThere are three built-in transformers, two argument transformers for `hmset` & `mset` and\na reply transformer for `hgetall`. Transformers for `hmset` and `hgetall` has been mentioned\nabove, and the transformer for `mset` is similar to the one for `hmset`:\n\n```javascript\nredis.mset({ k1: \'v1\', k2: \'v2\' });\nredis.get(\'k1\', function (err, result) {\n  // result === \'v1\';\n});\n\nredis.mset(new Map([[\'k3\', \'v3\'], [\'k4\', \'v4\']]));\nredis.get(\'k3\', function (err, result) {\n  // result === \'v3\';\n});\n```\n\n## Lua Scripting\nioredis supports all of the scripting commands such as `EVAL`, `EVALSHA` and `SCRIPT`.\nHowever it\'s tedious to use in real world scenarios since developers have to take\ncare of script caching and to detect when to use `EVAL` and when to use `EVALSHA`.\nioredis expose a `defineCommand` method to make scripting much easier to use:\n\n```javascript\nvar redis = new Redis();\n\n// This will define a command echo:\nredis.defineCommand(\'echo\', {\n  numberOfKeys: 2,\n  lua: \'return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}\'\n});\n\n// Now `echo` can be used just like any other ordinary commands,\n// and ioredis will try to use `EVALSHA` internally when possible for better performance.\nredis.echo(\'k1\', \'k2\', \'a1\', \'a2\', function (err, result) {\n  // result === [\'k1\', \'k2\', \'a1\', \'a2\']\n});\n\n// `echoBuffer` is also defined automatically to return buffers instead of strings:\nredis.echoBuffer(\'k1\', \'k2\', \'a1\', \'a2\', function (err, result) {\n  // result[0] === new Buffer(\'k1\');\n});\n\n// And of course it works with pipeline:\nredis.pipeline().set(\'foo\', \'bar\').echo(\'k1\', \'k2\', \'a1\', \'a2\').exec();\n```\n\nIf the number of keys can\'t be determined when defining a command, you can\nomit the `numberOfKeys` property, and pass the number of keys as the first argument\nwhen you call the command:\n\n```javascript\nredis.defineCommand(\'echoDynamicKeyNumber\', {\n  lua: \'return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}\'\n});\n\n// Now you have to pass the number of keys as the first argument every time\n// you invoke the `echoDynamicKeyNumber` command:\nredis.echoDynamicKeyNumber(2, \'k1\', \'k2\', \'a1\', \'a2\', function (err, result) {\n  // result === [\'k1\', \'k2\', \'a1\', \'a2\']\n});\n```\n\n## Monitor\nRedis supports the MONITOR command,\nwhich lets you see all commands received by the Redis server across all client connections,\nincluding from other client libraries and other computers.\n\nThe `monitor` method returns a monitor instance.\nAfter you send the MONITOR command, no other commands are valid on that connection. ioredis would emit a monitor event for every new monitor message that comes across.\nThe callback for the monitor event takes a timestamp from the Redis server and an array of command arguments.\n\nHere is a simple example:\n\n```javascript\nredis.monitor(function (err, monitor) {\n  monitor.on(\'monitor\', function (time, args) {\n  });\n});\n```\n\n## Auto-reconnect\nBy default, ioredis will try to reconnect when the connection to Redis is lost\nexcept when the connection is closed manually by `redis.disconnect()` or `redis.quit()`.\n\nIt\'s very flexible to control how long to wait to reconnect after disconnected\nusing the `retryStrategy` option:\n\n```javascript\nvar redis = new Redis({\n  // This is the default value of `retryStrategy`\n  retryStrategy: function (times) {\n    var delay = Math.min(times * 2, 2000);\n    return delay;\n  }\n});\n```\n\n`retryStrategy` is a function that will be called when the connection is lost.\nThe argument `times` represents this is the nth reconnection being made and\nthe return value represents how long(ms) to wait to reconnect. When the\nreturn value isn\'t a number, ioredis will stop trying reconnecting and the connection\nwill be lost forever if user don\'t call `redis.connect()` manually.\n\nWhen reconnected, client will auto subscribe channels that the previous connection has subscribed.\nThis behavious can be disabled by setting `autoResubscribe` option to `false`.\n\nAnd if the previous connection has some unfulfilled commands(most likely are block commands such as `brpop` and `blpop`),\nclient will resend them when reconnected. This behavious can be disabled by setting `autoResendUnfulfilledCommands` option to `false`.\n\n## Connection Events\nRedis instance will emit some events about the state of the connection to the Redis server.\n\n### "connect"\nclient will emit `connect` once a connection is established to the Redis server.\n\n### "ready"\nIf `enableReadyCheck` is `true`, client will emit `ready` when the server reports that it is ready to receive commands(e.g. finish loading data from disk).\nOtherwise `ready` will be emitted immediately right after the `connect` event.\n\n### "close"\nclient will emit `close` when an established Redis server connection has closed.\n\n### "reconnecting"\nclient will emit `reconnecting` after `close` when a reconnection would be made. The argument of the event is the time(ms) before reconnecting.\n\n### "end"\nclient will emit `end` after `close` when no more reconnections would be made.\n\n## Offline Queue\nWhen a command can\'t be processed by Redis(being sent before `ready` event), by default it\'s added to the offline queue and will be\nexecuted when it can be processed. You can disable this feature by set `enableOfflineQueue`\noption to `false`:\n\n```javascript\nvar redis = new Redis({ enableOfflineQueue: false });\n```\n\n## Sentinel\nioredis supports Sentinel out of the box. It works transparently as all features that work when\nyou connect to a single node also work when you connect to a sentinel group. Make sure to run Redis 2.8+ if you want to use this feature.\n\nTo connect using Sentinel, use:\n\n```javascript\nvar redis = new Redis({\n  sentinels: [{ host: \'localhost\', port: 26379 }, { host: \'localhost\', port: 26380 }],\n  name: \'mymaster\'\n});\n\nredis.set(\'foo\', \'bar\');\n```\n\nThe arguments passed to the constructor are different from ones you used to connect to a single node, where:\n\n* `name` identifies a group of Redis instances composed of a master and one or more slaves (`mymaster` in the example);\n* `sentinels` are a list of sentinels to connect to. The list does not need to enumerate all your sentinel instances, but a few so that if one is down the client will try the next one.\n\nioredis **guarantees** that the node you connected with is always a master even after a failover. When a failover happens, instead of trying to reconnect with the failed node(which will be demoted to slave when it\'s available again), ioredis will ask sentinels for the new master node and connect to it. All commands sent during the failover are queued and will be executed when the new connection is established so that none of the commands will be lost.\n\nIt\'s possible to connect to a slave instead of a master by specifying the option `role` with the value of `slave`, and ioredis will try to connect to a random slave of the specified master, with the guarantee that the connected node is always a slave. If the current node is promoted to master owing to a failover, ioredis will disconnect with it and ask sentinels for another slave node to connect to.\n\nBesides `retryStrategy` option, there\'s also a `sentinelRetryStrategy` in Sentinel mode which will be invoked when all the sentinel nodes are unreachable during connecting. If `sentinelRetryStrategy` returns a valid delay time, ioredis will try to reconnect from scratch. The default value of `sentinelRetryStrategy` is:\n\n```javascript\nfunction (times) {\n  var delay = Math.min(times * 10, 1000);\n  return delay;\n}\n```\n\n## Cluster\nRedis Cluster provides a way to run a Redis installation where data is automatically sharded across multiple Redis nodes.\nYou can connect to a Redis Cluster like this:\n\n```javascript\nvar Redis = require(\'ioredis\');\n\nvar cluster = new Redis.Cluster([{\n  port: 6380,\n  host: \'127.0.0.1\'\n}, {\n  port: 6381,\n  host: \'127.0.0.1\'\n}]);\n\ncluster.set(\'foo\', \'bar\');\ncluster.get(\'foo\', function (err, res) {\n  // res === \'bar\'\n});\n```\n\n`Cluster` constructor accepts two arguments, where:\n\n0. The first argument is a list of nodes of the cluster you want to connect to.\nJust like Sentinel, the list does not need to enumerate all your cluster nodes,\nbut a few so that if one is unreachable the client will try the next one, and the client will discover other nodes automatically when at least one node is connnected.\n0. The second argument is the option that will be passed to the `Redis` constructor when creating connections to Redis nodes internally. There are some additional options for the Cluster:\n\n    * `clusterRetryStrategy`: When none of the startup nodes are reachable, `clusterRetryStrategy` will be invoked. When a number is returned,\n    ioredis will try to reconnect the startup nodes from scratch after the specified delay(ms). Otherwise an error of "None of startup nodes is available" will returned.\n    The default value of this option is:\n\n        ```javascript\n        function (times) {\n          var delay = Math.min(100 + times * 2, 2000);\n          return delay;\n        }\n        ```\n\n    * `maxRedirections`: When a `MOVED` or `ASK` error is received, client will redirect the\n    command to another node. This option limits the max redirections allowed when sending a command. The default value is `16`.\n    * `retryDelayOnFailover`: If the error of "Connection is closed." is received when sending a command,\n    ioredis will retry after the specified delay. The default value is `2000`. You should make sure to let `retryDelayOnFailover * maxRedirections > cluster-node-timeout`\n    in order to insure that no command will fails during a failover.\n    * `retryDelayOnClusterDown`: When a cluster is down, all commands will be rejected with the error of `CLUSTERDOWN`. If this option is a number(by default is 1000), client\n    will resend the commands after the specified time(ms).\n\n### Transaction and pipeline in Cluster mode\nAlmost all features that are supported by `Redis` also supported by `Redis.Cluster`, e.g. custom commands, transaction and pipeline.\nHowever there are some differences when using transaction and pipeline in Cluster mode:\n\n0. All keys in a pipeline should belong to the same slot since ioredis sends all commands in a pipeline to the same node.\n0. You can\'t use `multi` without pipeline(aka `cluster.multi({ pipeline: false })`). This is because when you call `cluster.multi({ pipeline: false })`, ioredis doesn\'t know which node should the `multi` command be sent to.\n0. Chaining custom commands in the pipeline is not supported in Cluster mode.\n\nWhen any commands in a pipeline receives a `MOVED` or `ASK` error, ioredis will resend the whole pipeline to the specified node automatically if all of the following conditions are satisfied:\n\n0. All errors received in the pipeline are same. For example, we won\'t resend the pipeline if we got two `MOVED` error pointing to different nodes.\n0. All commands executed successfully are readonly commands. This makes sure that resending the pipeline won\'t have side effect.\n\n## hiredis\nIf [hiredis](https://github.com/redis/hiredis-node) is installed(by `npm install hiredis`),\nioredis will use it by default. Otherwise, a pure JavaScript parser will be used.\nTypically there\'s not much differences between them in terms of performance.\n\n<hr>\n\n# Error Handling\nAll the errors returned by the Redis server are instances of `ReplyError`, which can be accessed via `Redis`:\n\n```javascript\nvar Redis = require(\'ioredis\');\nvar redis = new Redis();\n// This command causes an reply error since SET command requires two arguments.\nredis.set(\'foo\', function (err) {\n  err instanceof Redis.ReplyError\n});\n```\n\nWhen a reply error is not handled(no callback is specified and no `catch` method is chained),\nthe error will be logged to the stderr. For instance:\n\n```javascript\nvar Redis = require(\'ioredis\');\nvar redis = new Redis();\nredis.set(\'foo\');\n```\n\nThe following error will be printed:\n\n```\nUnhandled rejection ReplyError: ERR wrong number of arguments for \'set\' command\n    at ReplyParser._parseResult (/app/node_modules/ioredis/lib/parsers/javascript.js:60:14)\n    at ReplyParser.execute (/app/node_modules/ioredis/lib/parsers/javascript.js:178:20)\n    at Socket.<anonymous> (/app/node_modules/ioredis/lib/redis/event_handler.js:99:22)\n    at Socket.emit (events.js:97:17)\n    at readableAddChunk (_stream_readable.js:143:16)\n    at Socket.Readable.push (_stream_readable.js:106:10)\n    at TCP.onread (net.js:509:20)\n```\n\nBut the error stack doesn\'t make any sense because the whole stack happens in the ioreids\nmodule itself, not in your code. So it\'s not easy to find out where the error happens in your code.\nioredis provides an option `showFriendlyErrorStack` to solve the problem. When you enable\n`showFriendlyErrorStack`, ioredis will optimize the error stack for you:\n\n```javascript\nvar Redis = require(\'ioredis\');\nvar redis = new Redis({ showFriendlyErrorStack: true });\nredis.set(\'foo\');\n```\n\nAnd the output will be:\n\n```\nUnhandled rejection ReplyError: ERR wrong number of arguments for \'set\' command\n    at Object.<anonymous> (/app/index.js:3:7)\n    at Module._compile (module.js:446:26)\n    at Object.Module._extensions..js (module.js:464:10)\n    at Module.load (module.js:341:32)\n    at Function.Module._load (module.js:296:12)\n    at Function.Module.runMain (module.js:487:10)\n    at startup (node.js:111:16)\n    at node.js:799:3\n```\n\nThis time the stack tells you that the error happens on the third line in your code, pretty sweet!\nHowever, it would decrease the performance significantly to optimize the error stack. So by\ndefault this option is disabled and can be only used for debug purpose. You **shouldn\'t** use this feature in production environment.\n\nIf you want to catch all unhandled errors without decrease performance, there\'s another way:\n\n```javascript\nvar Redis = require(\'ioredis\');\nRedis.Promise.onPossiblyUnhandledRejection(function (error) {\n  // you can log the error here.\n  // error.command.name is the command name, here is \'set\'\n  // error.command.args is the command arguments, here is [\'foo\']\n});\nvar redis = new Redis();\nredis.set(\'foo\');\n```\n\n# Benchmark\n\nCompares with [node_redis](https://github.com/mranney/node_redis) on my laptop(MacBook Pro, Retina, 15-inch, Late 2013):\n\n```shell\n> npm run bench\n==========================\nioredis: 1.3.1\nnode_redis: 0.12.1\nCPU: 8\nOS: darwin x64\n==========================\n\n                    simple set\n        89,288 op/s » ioredis\n        42,899 op/s » node_redis\n\n                    simple get\n        90,002 op/s » ioredis\n        42,505 op/s » node_redis\n\n                    simple get with pipeline\n        12,899 op/s » ioredis\n         4,332 op/s » node_redis\n\n                    lrange 100\n        65,452 op/s » ioredis\n        48,121 op/s » node_redis\n\n\n  Suites:  4\n  Benches: 8\n  Elapsed: 61,807.57 ms\n```\n\nHowever since there are many factors that can impact the benchmark, results may be different in your server([#25](https://github.com/luin/ioredis/issues/25)).\nYou can find the code at `benchmarks/*.js` and run it yourself using `npm run bench`.\n\n# Running tests\n\nStart a Redis server on 127.0.0.1:6379, and then:\n\n```shell\n$ npm test\n```\n\n`FLUSH ALL` will be invoked after each test, so make sure there\'s no valuable data in it before running tests.\n\n# Debug\n\nYou can set the `DEBUG` env to `ioredis:*` to print debug info:\n\n```shell\n$ DEBUG=ioredis:* node app.js\n```\n\n# Motivation\n\nOriginally we used the Redis client [node_redis](https://github.com/mranney/node_redis),\nbut over a period of time we found that it\'s not robust enough for us to use\nin our production environment. The library has some non-trivial bugs and many unresolved\nissues on the GitHub(165 so far). For instance:\n\n```javascript\nvar redis = require(\'redis\');\nvar client = redis.createClient();\n\nclient.set(\'foo\', \'message\');\nclient.set(\'bar\', \'Hello world\');\nclient.mget(\'foo\', \'bar\');\n\nclient.subscribe(\'channel\');\nclient.on(\'message\', function (msg) {\n  // Will print "Hello world", although no `publish` is invoked.\n  console.log(\'received \', msg);\n});\n```\n\nI submitted some pull requests but sadly none of them has been merged, so here\'s ioredis.\n\n# Join in!\n\nI\'m happy to receive bug reports, fixes, documentation enhancements, and any other improvements.\n\nAnd since I\'m not an English native speaker so if you find any grammar mistake in the documentation, please also let me know. :)\n\n# Roadmap\n\n* Transparent Key Prefixing\n* [Distributed Lock](http://redis.io/topics/distlock)\n* Connection Pooling & Read-Write Splitting\n\n# Acknowledge\n\nThe JavaScript and hiredis parsers are modified from [node_redis](https://github.com/mranney/node_redis) (MIT License, Copyright (c) 2010 Matthew Ranney, http://ranney.com/).\n\n# License\n\nMIT\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'ioredis@1.4.0',
+35 silly resolved     _from: 'ioredis' } ]
+36 info install ioredis@1.4.0 into /home/dinhtrong/thanh/laravel5.1
+37 info installOne ioredis@1.4.0
+38 warn engine ioredis@1.4.0: wanted: {"node":">= 0.10.16","iojs":">= 1.0.0"} (current: {"node":"v0.8.15","npm":"1.1.66"})
+39 verbose from cache /home/dinhtrong/.npm/ioredis/1.4.0/package/package.json
+40 info /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis unbuild
+41 verbose read json /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis/package.json
+42 verbose tar unpack /home/dinhtrong/.npm/ioredis/1.4.0/package.tgz
+43 silly lockFile be81f82e--laravel5-1-node-modules-ioredis /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis
+44 verbose lock /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis /home/dinhtrong/.npm/be81f82e--laravel5-1-node-modules-ioredis.lock
+45 silly gunzTarPerm modes [ '755', '644' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm extractEntry .npmignore
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm extractEntry LICENSE
+50 silly gunzTarPerm extractEntry index.js
+51 silly gunzTarPerm extractEntry commands.js
+52 silly gunzTarPerm extractEntry testq.js
+53 silly gunzTarPerm extractEntry tools/build.js
+54 silly gunzTarPerm extractEntry Changelog.md
+55 silly gunzTarPerm extractEntry API.md
+56 silly gunzTarPerm extractEntry .idea/encodings.xml
+57 silly gunzTarPerm extractEntry .idea/.name
+58 silly gunzTarPerm extractEntry .idea/scopes/scope_settings.xml
+59 silly gunzTarPerm extractEntry .idea/modules.xml
+60 silly gunzTarPerm extractEntry .idea/libraries/ioredis_node_modules.xml
+61 silly gunzTarPerm extractEntry .idea/misc.xml
+62 silly gunzTarPerm extractEntry .idea/ioredis.iml
+63 silly gunzTarPerm extractEntry .idea/workspace.xml
+64 silly gunzTarPerm extractEntry .idea/vcs.xml
+65 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+66 silly gunzTarPerm extractEntry test/.jshintrc
+67 silly gunzTarPerm extractEntry test/mocha.opts
+68 silly gunzTarPerm extractEntry test/helpers/global.js
+69 silly gunzTarPerm extractEntry test/helpers/mock_server.js
+70 silly gunzTarPerm extractEntry test/functional/transaction.js
+71 silly gunzTarPerm extractEntry test/functional/connection.js
+72 silly gunzTarPerm extractEntry test/functional/transformer.js
+73 silly gunzTarPerm extractEntry test/functional/monitor.js
+74 silly gunzTarPerm extractEntry test/functional/ready_check.js
+75 silly gunzTarPerm extractEntry test/functional/pipeline.js
+76 silly gunzTarPerm extractEntry test/functional/send_command.js
+77 silly gunzTarPerm extractEntry test/functional/select.js
+78 silly gunzTarPerm extractEntry test/functional/sentinel.js
+79 silly gunzTarPerm extractEntry test/functional/auth.js
+80 silly gunzTarPerm extractEntry test/functional/show_friendly_error_stack.js
+81 silly gunzTarPerm extractEntry test/functional/cluster.js
+82 silly gunzTarPerm extractEntry test/functional/pub_sub.js
+83 silly gunzTarPerm extractEntry test/functional/scripting.js
+84 silly gunzTarPerm extractEntry test/functional/lazy_connect.js
+85 silly gunzTarPerm extractEntry test/functional/unref.js
+86 silly gunzTarPerm extractEntry test/unit/cluster.js
+87 silly gunzTarPerm extractEntry test/unit/command.js
+88 silly gunzTarPerm extractEntry test/unit/parser.js
+89 silly gunzTarPerm extractEntry test/unit/commander.js
+90 silly gunzTarPerm extractEntry test/unit/utils.js
+91 silly gunzTarPerm extractEntry test/unit/redis.js
+92 silly gunzTarPerm extractEntry lib/transaction.js
+93 silly gunzTarPerm extractEntry lib/pipeline.js
+94 silly gunzTarPerm extractEntry lib/command.js
+95 silly gunzTarPerm extractEntry lib/subscription_set.js
+96 silly gunzTarPerm extractEntry lib/redis.js
+97 silly gunzTarPerm extractEntry lib/cluster.js
+98 silly gunzTarPerm extractEntry lib/commander.js
+99 silly gunzTarPerm extractEntry lib/script.js
+100 silly gunzTarPerm extractEntry lib/reply_error.js
+101 silly gunzTarPerm extractEntry lib/utils/crc.js
+102 silly gunzTarPerm extractEntry lib/utils/index.js
+103 silly gunzTarPerm extractEntry lib/connectors/sentinel_connector.js
+104 silly gunzTarPerm extractEntry lib/connectors/connector.js
+105 silly gunzTarPerm extractEntry lib/redis/event_handler.js
+106 silly gunzTarPerm extractEntry lib/redis/parser.js
+107 silly gunzTarPerm extractEntry lib/parsers/javascript.js
+108 silly gunzTarPerm extractEntry lib/parsers/hiredis.js
+109 silly gunzTarPerm extractEntry .travis.yml
+110 silly gunzTarPerm extractEntry benchmarks/single_node.js
+111 silly gunzTarPerm extractEntry benchmarks/.jshintrc
+112 silly gunzTarPerm extractEntry .jshintrc
+113 verbose read json /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis/package.json
+114 silly lockFile be81f82e--laravel5-1-node-modules-ioredis /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis
+115 info preinstall ioredis@1.4.0
+116 verbose from cache /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis/package.json
+117 verbose readDependencies using package.json deps
+118 verbose from cache /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis/package.json
+119 verbose readDependencies using package.json deps
+120 verbose cache add [ 'bluebird@^2.9.21', null ]
+121 silly cache add name=undefined spec="bluebird@^2.9.21" args=["bluebird@^2.9.21",null]
+122 verbose parsed url { pathname: 'bluebird@^2.9.21',
+122 verbose parsed url   path: 'bluebird@^2.9.21',
+122 verbose parsed url   href: 'bluebird@^2.9.21' }
+123 silly cache add name="bluebird" spec="^2.9.21" args=["bluebird","^2.9.21"]
+124 verbose parsed url { pathname: '^2.9.21', path: '^2.9.21', href: '^2.9.21' }
+125 verbose addNamed [ 'bluebird', '^2.9.21' ]
+126 verbose addNamed [ null, null ]
+127 silly lockFile cf500c4f-bluebird-2-9-21 bluebird@^2.9.21
+128 verbose lock bluebird@^2.9.21 /home/dinhtrong/.npm/cf500c4f-bluebird-2-9-21.lock
+129 verbose cache add [ 'debug@^2.1.3', null ]
+130 silly cache add name=undefined spec="debug@^2.1.3" args=["debug@^2.1.3",null]
+131 verbose parsed url { pathname: 'debug@^2.1.3',
+131 verbose parsed url   path: 'debug@^2.1.3',
+131 verbose parsed url   href: 'debug@^2.1.3' }
+132 silly cache add name="debug" spec="^2.1.3" args=["debug","^2.1.3"]
+133 verbose parsed url { pathname: '^2.1.3', path: '^2.1.3', href: '^2.1.3' }
+134 verbose addNamed [ 'debug', '^2.1.3' ]
+135 verbose addNamed [ null, null ]
+136 silly lockFile 25631424-debug-2-1-3 debug@^2.1.3
+137 verbose lock debug@^2.1.3 /home/dinhtrong/.npm/25631424-debug-2-1-3.lock
+138 info addNameTag [ 'bluebird', '^2.9.21' ]
+139 info addNameTag [ 'debug', '^2.1.3' ]
+140 verbose cache add [ 'flexbuffer@0.0.6', null ]
+141 silly cache add name=undefined spec="flexbuffer@0.0.6" args=["flexbuffer@0.0.6",null]
+142 verbose parsed url { pathname: 'flexbuffer@0.0.6',
+142 verbose parsed url   path: 'flexbuffer@0.0.6',
+142 verbose parsed url   href: 'flexbuffer@0.0.6' }
+143 silly cache add name="flexbuffer" spec="0.0.6" args=["flexbuffer","0.0.6"]
+144 verbose parsed url { pathname: '0.0.6', path: '0.0.6', href: '0.0.6' }
+145 verbose addNamed [ 'flexbuffer', '0.0.6' ]
+146 verbose addNamed [ '0.0.6', '0.0.6' ]
+147 silly lockFile 1f842065-flexbuffer-0-0-6 flexbuffer@0.0.6
+148 verbose lock flexbuffer@0.0.6 /home/dinhtrong/.npm/1f842065-flexbuffer-0-0-6.lock
+149 verbose cache add [ 'lodash@^3.6.0', null ]
+150 silly cache add name=undefined spec="lodash@^3.6.0" args=["lodash@^3.6.0",null]
+151 verbose parsed url { pathname: 'lodash@^3.6.0',
+151 verbose parsed url   path: 'lodash@^3.6.0',
+151 verbose parsed url   href: 'lodash@^3.6.0' }
+152 silly cache add name="lodash" spec="^3.6.0" args=["lodash","^3.6.0"]
+153 verbose parsed url { pathname: '^3.6.0', path: '^3.6.0', href: '^3.6.0' }
+154 verbose addNamed [ 'lodash', '^3.6.0' ]
+155 verbose addNamed [ null, null ]
+156 silly lockFile 02802cad-lodash-3-6-0 lodash@^3.6.0
+157 verbose lock lodash@^3.6.0 /home/dinhtrong/.npm/02802cad-lodash-3-6-0.lock
+158 verbose url raw debug
+159 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+160 verbose url resolved https://registry.npmjs.org/debug
+161 info trying registry request attempt 1 at 13:41:09
+162 verbose etag "8H4L45HGXGDN8GPKEY4WTFS2Y"
+163 http GET https://registry.npmjs.org/debug
+164 verbose url raw bluebird
+165 verbose url resolving [ 'https://registry.npmjs.org/', './bluebird' ]
+166 verbose url resolved https://registry.npmjs.org/bluebird
+167 info trying registry request attempt 1 at 13:41:09
+168 verbose etag "AY7Q8RL75IOE9YCVCDX86MAV4"
+169 http GET https://registry.npmjs.org/bluebird
+170 info addNameTag [ 'lodash', '^3.6.0' ]
+171 verbose url raw flexbuffer/0.0.6
+172 verbose url resolving [ 'https://registry.npmjs.org/', './flexbuffer/0.0.6' ]
+173 verbose url resolved https://registry.npmjs.org/flexbuffer/0.0.6
+174 info trying registry request attempt 1 at 13:41:09
+175 verbose etag "8HFQC0M1D61RMXCPFGCD5RH5L"
+176 http GET https://registry.npmjs.org/flexbuffer/0.0.6
+177 verbose url raw lodash
+178 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+179 verbose url resolved https://registry.npmjs.org/lodash
+180 info trying registry request attempt 1 at 13:41:09
+181 verbose etag "B3EBN7V1RADG9DRZC2BMS7AP5"
+182 http GET https://registry.npmjs.org/lodash
+183 http 304 https://registry.npmjs.org/debug
+184 silly registry.get cb [ 304,
+184 silly registry.get   { date: 'Fri, 12 Jun 2015 06:41:10 GMT',
+184 silly registry.get     via: '1.1 varnish',
+184 silly registry.get     'cache-control': 'max-age=60',
+184 silly registry.get     etag: '"8H4L45HGXGDN8GPKEY4WTFS2Y"',
+184 silly registry.get     age: '22',
+184 silly registry.get     connection: 'keep-alive',
+184 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+184 silly registry.get     'x-cache': 'HIT',
+184 silly registry.get     'x-cache-hits': '1',
+184 silly registry.get     'x-timer': 'S1434091270.087280,VS0,VE0',
+184 silly registry.get     vary: 'Accept' } ]
+185 verbose etag debug from cache
+186 http 304 https://registry.npmjs.org/lodash
+187 silly registry.get cb [ 304,
+187 silly registry.get   { date: 'Fri, 12 Jun 2015 06:41:10 GMT',
+187 silly registry.get     via: '1.1 varnish',
+187 silly registry.get     'cache-control': 'max-age=60',
+187 silly registry.get     etag: '"B3EBN7V1RADG9DRZC2BMS7AP5"',
+187 silly registry.get     age: '22',
+187 silly registry.get     connection: 'keep-alive',
+187 silly registry.get     'x-served-by': 'cache-lax1423-LAX',
+187 silly registry.get     'x-cache': 'HIT',
+187 silly registry.get     'x-cache-hits': '1',
+187 silly registry.get     'x-timer': 'S1434091270.095551,VS0,VE0',
+187 silly registry.get     vary: 'Accept' } ]
+188 verbose etag lodash from cache
+189 silly lockFile 25631424-debug-2-1-3 debug@^2.1.3
+190 verbose about to build /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis
+191 info /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis unbuild
+192 verbose from cache /home/dinhtrong/thanh/laravel5.1/node_modules/ioredis/package.json
+193 info preuninstall ioredis@1.4.0
+194 silly lockFile 02802cad-lodash-3-6-0 lodash@^3.6.0
+195 info uninstall ioredis@1.4.0
+196 verbose true,/home/dinhtrong/thanh/laravel5.1/node_modules,/home/dinhtrong/thanh/laravel5.1/node_modules unbuild ioredis@1.4.0
+197 info postuninstall ioredis@1.4.0
+198 error Error: No compatible version found: debug@'^2.1.3'
+198 error Valid install targets:
+198 error ["0.0.1","0.1.0","0.2.0","0.3.0","0.4.0","0.4.1","0.5.0","0.6.0","0.7.0","0.7.1","0.7.2","0.7.3","0.7.4","0.8.0","0.8.1","1.0.0","1.0.1","1.0.2","1.0.3","1.0.4","2.0.0","2.1.0","2.1.1","2.1.2","2.1.3","2.2.0"]
+198 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:563:10)
+198 error     at /usr/local/lib/node_modules/npm/lib/cache.js:478:10
+198 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+198 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:218:7
+198 error     at Object.oncomplete (fs.js:297:15)
+199 error If you need help, you may report this log at:
+199 error     <http://github.com/isaacs/npm/issues>
+199 error or email it to:
+199 error     <npm-@googlegroups.com>
+200 error System Linux 3.13.0-46-generic
+201 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ioredis"
+202 error cwd /home/dinhtrong/thanh/laravel5.1
+203 error node -v v0.8.15
+204 error npm -v 1.1.66
+205 verbose exit [ 1, true ]
